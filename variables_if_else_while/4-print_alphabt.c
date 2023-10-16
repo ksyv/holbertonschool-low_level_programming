@@ -17,12 +17,8 @@ int main(void)
 		if (n != 101 && n != 113)
 		{
 			putchar(n);
-			n++;
 		}
-		else
-		{
-			n = n + 2;
-		}
+		n++;
 	}
 	putchar(r);
 	return (0);
