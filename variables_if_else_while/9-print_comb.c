@@ -9,8 +9,8 @@
 int main(void)
 {
 	int n = 0;
-	char a = ' ';
-	char r = '\n';
+	int a = ' ';
+	int r = '\n';
 
 	while (n < 10)
 	{
