@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (n < 10)
 		{
-		putchar(n + 30);
+		putchar(n + 48);
 		}
 		else
 		{
