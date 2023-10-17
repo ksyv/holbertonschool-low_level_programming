@@ -3,7 +3,7 @@
  * print_alphabet_X10 - print 10 times the alphabet in lowercase,
  * followed by a new line.
  */
-void print_alphabet_X10(void)
+void print_alphabet_x10(void)
 {
 	int n = 97;
 	int r = '\n';
