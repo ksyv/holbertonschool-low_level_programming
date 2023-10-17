@@ -16,17 +16,24 @@ void times_table(void)
 				_putchar(' ');
 			}
 			c = a * b;
-			if (c < 10)
+			if (c == 0)
 			{
-				_putchar(' ');
 				_putchar(c + '0');
 			}
 			else
 			{
-				d = c / 10;
-				e = c % 10;
-				_putchar(d + '0');
-				_putchar(e + '0');
+				if (c < 10)
+				{
+					_putchar(' ');
+					_putchar(c + '0');
+				}
+				else
+				{
+					d = c / 10;
+					e = c % 10;
+					_putchar(d + '0');
+					_putchar(e + '0');
+				}
 			}
 		}
 		_putchar('\n');
