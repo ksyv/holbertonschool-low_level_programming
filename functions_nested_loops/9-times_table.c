@@ -15,25 +15,21 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			c = a * b;
-			if (c == 0)
+			else
 			{
+				_putchar('0');
+			c = a * b;
+			if (c < 10)
+			{
+				_putchar(' ');
 				_putchar(c + '0');
 			}
 			else
 			{
-				if (c < 10)
-				{
-					_putchar(' ');
-					_putchar(c + '0');
-				}
-				else
-				{
-					d = c / 10;
-					e = c % 10;
-					_putchar(d + '0');
-					_putchar(e + '0');
-				}
+				d = c / 10;
+				e = c % 10;
+				_putchar(d + '0');
+				_putchar(e + '0');
 			}
 		}
 		_putchar('\n');
