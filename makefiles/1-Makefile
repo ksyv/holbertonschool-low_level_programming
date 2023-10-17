@@ -1,0 +1,7 @@
+all: school
+
+school: SRC.o
+	$(CC) -o school $(SRC.o)
+
+$(SRC.o): $(SRC)
+	$(CC) -c $(SRC)
