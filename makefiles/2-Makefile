@@ -1,0 +1,12 @@
+CC=gcc
+SRC= school.c main.c
+OBJ= $(SRC:.c=.o)
+Name=school
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) -o school $(OBJ)
+
+$(OBJ): $(SRC)
+	$(CC) -c $(SRC)
