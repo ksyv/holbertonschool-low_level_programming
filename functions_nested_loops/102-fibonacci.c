@@ -10,7 +10,7 @@ int main(void)
 	int a, c = 0;
 	int b = 1;
 
-	for (a = 0; a <= 50; a++)
+	for (a = 1; a < 50; a++)
 	{
 		if (a % 2 != 0)
 		{
