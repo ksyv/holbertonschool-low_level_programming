@@ -10,7 +10,7 @@ int main(void)
 	long int a, c = 0;
 	long int b = 1;
 
-	for (a = 1; a <= 50; a++)
+	for (a = 1; a < 50; a++)
 	{
 		if (a % 2 != 0)
 		{
@@ -23,6 +23,7 @@ int main(void)
 			printf("%ld, ", b);
 		}
 	}
-	printf("\n");
+	b = b + c;
+	printf("%ld\n", b);
 	return (0);
 }
