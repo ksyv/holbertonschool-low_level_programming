@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (n % 3 == 0 || n % 5 == 0)
 		{
-			t = t + n
+			t = t + n;
 		}
 	}
 	printf("%d\n", t);
