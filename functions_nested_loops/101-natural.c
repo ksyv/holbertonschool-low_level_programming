@@ -7,18 +7,15 @@
  */
 int main(void)
 {
-	int a, b, m3, m5 = 0;
+	int n, t = 0
 
-	while (a < 1024)
+	for (n = 0; n < 1024; n++)
 	{
-		a = a + 3;
-		m3 = m3 + a;
+		if (n % 3 == 0 || n % 5 == 0)
+		{
+			t = t + n
+		}
 	}
-	while (b < 1024)
-	{
-		b = b + 5;
-		m5 = m5 + b;
-	}
-	printf("%d\n", m3 + m5);
+	printf("%d\n", t);
 	return (0);
 }
