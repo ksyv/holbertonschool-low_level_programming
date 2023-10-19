@@ -14,7 +14,12 @@ void print_times_table(int n)
 		{
 			for (b = 0; b <= n; b++)
 			{
-				if (a * b / 10 > 0)
+				if (a * b / 10 > 10)
+				{
+					_putchar(a * b / 100 + '0');
+					_putchar(a * b / 10 % 10 + '0');
+				}
+				else if (a * b / 10 > 0)
 				{
 					_putchar(a * b / 10 + '0');
 				}
