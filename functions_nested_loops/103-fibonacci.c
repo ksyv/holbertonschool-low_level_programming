@@ -7,15 +7,22 @@
  */
 int main(void)
 {
-	long int a = 0;
+	long int a, d = 0;
 	long int b, c = 1;
 
-	while (a < 4000000 && b < 4000000)
+	while (a > 4000000 || b > 4000000)
 	{
-		a = a + b;
-		c = c + a;
-		b = b + a;
-		c = c + b;
+		d++;
+		if (d % 2 != 0)
+		{
+			a = a + b;
+			c = c + a;
+		}
+		else
+		{
+			b = b + a;
+			c = c + b;
+		}
 	}
 	printf("%ld\n", c);
 	return (0);
