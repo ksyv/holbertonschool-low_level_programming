@@ -12,13 +12,13 @@ int main(void)
 	a = 0;
 	b = 1;
 	c = a + b;
-	s = a + b + c;
+	s = 0;
 	while (c < 4000000)
 	{
 		a = b;
 		b = c;
 		c = a + b;
-		if (c % 2 != 0)
+		if (c % 2 == 0)
 		{
 			s += c;
 		}
