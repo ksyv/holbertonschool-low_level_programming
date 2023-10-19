@@ -7,20 +7,20 @@
  */
 int main(void)
 {
-	long long int a, c = 0;
-	long long int b = 1;
+	long int a, c = 0;
+	long int b = 1;
 
 	for (a = 1; a <= 50; a++)
 	{
 		if (a % 2 != 0)
 		{
 			c = b + c;
-			printf("%lld, ", c);
+			printf("%ld, ", c);
 		}
 		else
 		{
 			b = b + c;
-			printf("%lld, ", b);
+			printf("%ld, ", b);
 		}
 	}
 	printf("\n");
