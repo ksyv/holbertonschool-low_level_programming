@@ -17,9 +17,16 @@ void print_number(int n)
 		_putchar(45);
 		n = n * -1;
 	}
-	while (n / nc != 0)
+	if (n < 1000000000)
 	{
-		nc = nc * 10;
+		while (n / nc != 0)
+		{
+			nc = nc * 10;
+		}
+	}
+	else
+	{
+		nc = 1000000000;
 	}
 	dnc = nc / 10;
 	while (dnc >= 1)
@@ -28,4 +35,5 @@ void print_number(int n)
 		nc = nc / 10;
 		dnc = nc / 10;
 	}
+
 }
