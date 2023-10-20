@@ -43,6 +43,6 @@ int main(void)
 		}
 	b1 += c1 + 1;
 	b2 += c2 - 100000000000;
-	printf("%ld%ld", b1, b2);
+	printf("%ld%ld\n", b1, b2);
 	return (0);
 }
