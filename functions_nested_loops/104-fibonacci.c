@@ -31,6 +31,11 @@ int main(void)
 		{
 			c1 += b1;
 			c2 += b2;
+			if (c2 > 99999999999)
+			{
+				c2 = c2 - 100000000000;
+				c1 = c1++;
+			}
 			printf("%ld%ld, ", c1, c2);
 		}
 		else
