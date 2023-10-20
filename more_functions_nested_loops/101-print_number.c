@@ -27,7 +27,7 @@ void print_number(int n)
 	else
 	{
 		nc = 1000000000;
-		_putchar(n/100000000);
+		_putchar(n / 100000000 + '0');
 	}
 	dnc = nc / 10;
 	while (dnc >= 1)
