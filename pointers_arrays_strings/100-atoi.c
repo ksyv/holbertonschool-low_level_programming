@@ -16,12 +16,14 @@ int _atoi(char *s)
 		}
 		if (s[t] > 47 && s[t] < 58)
 		{
+			if (r > 0)
+			{
+				r *= 10;
+			}
 			r += *(s + t) - 48;
-			r *= 10;
 		}
 		t++;
 	}
-	r /= 10;
 	r *= ns;
 	return (r);
 }
