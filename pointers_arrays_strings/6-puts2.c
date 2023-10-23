@@ -9,8 +9,9 @@ void puts2(char *str)
 
 	while (str[p] != 0)
 	{
+		p++;
 		_putchar(*(str + p));
-		p += 2;
+		p++;
 	}
 	_putchar('\n');
 }
