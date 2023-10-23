@@ -11,6 +11,10 @@ void puts_half(char *str)
 	{
 		p++;
 	}
+	if (p % 2 != 0)
+	{
+		p -= p;
+	}
 	p = p / 2;
 	while (str[p] != 0)
 	{
