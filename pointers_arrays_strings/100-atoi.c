@@ -22,6 +22,14 @@ int _atoi(char *s)
 			}
 			r += *(s + t) - 48;
 		}
+		else
+		{
+			if (r > 0)
+			{
+				r *= ns;
+				return (r);
+			}
+		}
 		t++;
 	}
 	r *= ns;
