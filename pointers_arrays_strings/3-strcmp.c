@@ -4,19 +4,24 @@
  * @s1: first string
  * @s2: second string
  * Return: 0 if the twice are equal,
- * 1 if the first is greater,
- * -1 if the first is smaller.
+ * positif if the first is greater,
+ * negatif if the first is smaller.
  */
 int _strcmp(char *s1, char *s2)
 {
-	if (*s1 == *s2)
-	{
-		return (0);
-	}
-	else if (*s1 > *s2)
-	{
-		return (1);
-	}
-	return (-1);
-}
+	int t = 0, r = 0;
 
+	while (*(s1 + t) != '\0' && *(s2 + t) != '\0')
+	{
+		if (*(s1 + t) > *(s2 + t))
+		{
+			r += *(s1 + t) - *(s2 + t);
+		}
+		else if (*(s1 + t) < *(s2 + t))
+		{
+			r -= *(s2 + t) - *(s1 + t);
+		}
+		t++;
+	}
+	return (r);
+}
