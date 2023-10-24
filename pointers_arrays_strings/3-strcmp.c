@@ -16,12 +16,15 @@ int _strcmp(char *s1, char *s2)
 		if (*(s1 + t) > *(s2 + t))
 		{
 			r += *(s1 + t) - *(s2 + t);
+			return (r);
 		}
-		else if (*(s1 + t) < *(s2 + t))
+		if (*(s1 + t) < *(s2 + t))
 		{
 			r -= *(s2 + t) - *(s1 + t);
+			return (r);
 		}
 		t++;
 	}
 	return (r);
+
 }
