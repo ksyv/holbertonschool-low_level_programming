@@ -9,12 +9,12 @@ char *_strstr(char *haystack, char *needle)
 {
 	int t = 0, v = 0, nc = 0, sc = 0, temp = 0;
 
-	while (*(needle + nc) >= '\0')
+	while (*(needle + nc) != '\0')
 	{
 		nc++;
 	}
 	nc--;
-	while (*(haystack + t) >= '\0')
+	while (*(haystack + t) != '\0')
 	{
 		if (*(haystack + t) == *(needle + sc))
 		{
@@ -30,8 +30,7 @@ char *_strstr(char *haystack, char *needle)
 			}
 			if (v == nc)
 			{
-				t = temp;
-				return (haystack + t);
+				return (haystack + temp);
 			}
 			t = temp;
 			sc = 0;
