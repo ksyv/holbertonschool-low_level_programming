@@ -30,7 +30,8 @@ char *_strstr(char *haystack, char *needle)
 			}
 			if (v == nc)
 			{
-				return (haystack + temp);
+				t = temp;
+				return (haystack + t);
 			}
 			t = temp;
 			sc = 0;
