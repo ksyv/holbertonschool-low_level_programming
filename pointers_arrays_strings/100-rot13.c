@@ -10,9 +10,9 @@ char *rot13(char *s)
 	char *a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char *b = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (c = 0; s[c] != 0; c++)
+	for (c = 0; s[c]; c++)
 	{
-		for (d = 0; a[d] != 0; d++)
+		for (d = 0; a[d]; d++)
 		{
 			if (*(s + c) == *(a + d))
 			{
