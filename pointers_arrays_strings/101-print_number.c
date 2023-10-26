@@ -4,18 +4,23 @@
  * @n: integer to be print
  */
 void print_number(int n)
-{	
+{
 	char numbers;
 	int div, temp;
+	unsigned int m = 1;
 
 	/* define and print the sign, and unsigned the integer */
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
+		m = n * -1;
 	}
+	else
+	{
+		m = n;
+	};
 	/* define lenght of n */
-	temp = n;
+	temp = m;
 	div = 1;
 	while (temp > 9)
 	{
@@ -25,12 +30,12 @@ void print_number(int n)
 	/* print all numbers 1 by 1 */
 	while (div > 1)
 	{
-		temp = n / div;
+		temp = m / div;
 		numbers = temp;
 		_putchar(numbers + '0');
-		n -= temp * div;
+		m -= temp * div;
 		div /= 10;
 	}
-	numbers = n;
+	numbers = m;
 	_putchar(numbers + '0');
 }
