@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - multiplies two numbers
+ * main - add all numbers
  * @argc: number of argument
  * @argv: arguments
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int r = 0, i;
+	long int r = 0, i;
 	char e[] = "Error";
 
 	if (argc < 1)
@@ -28,6 +28,6 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
-	printf("%d\n", r);
+	printf("%ld\n", r);
 	return (0);
 }
