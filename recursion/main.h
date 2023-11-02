@@ -11,3 +11,4 @@ int primertest(int t,int i);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int testpalind(char *s, int l, int u);
+int wildcmp(char *s1, char *s2);
