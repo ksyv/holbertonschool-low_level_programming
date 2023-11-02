@@ -30,7 +30,7 @@ int testpalind(char *s, int l, int u, int t)
 	{
 		return (0);
 	}
-	if  (l == t || l == u)
+	if  (u == t || l == u)
 	{
 		return (1);
 	}
