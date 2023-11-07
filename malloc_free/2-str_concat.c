@@ -29,5 +29,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		st[len2 + len1] = s2[len2];
 	}
+	st [len2 + len1 + 1] = '\0';
 	return (st);
 }
