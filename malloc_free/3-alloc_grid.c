@@ -9,20 +9,14 @@
  */
 int **alloc_grid(int width, int height)
 {
-	char *st;
-	int length, l1, l2, i;
+	int **len = NULL;
+	int index = 0, index2 = 0;
 
-	for (i = 0; s1[i]; i++)
-	l1 = i;
-	for (i = 0; s2[i] == '\0'; i++)
-	l2 = i;
-	length = l1 + l2;
-	st = malloc(length * sizeof(char));
-	if (st == NULL)
+	if (width == 0 || height == 0)
 		return (NULL);
-	for (i = 0; i <= l1; i++)
-		st[i] = s1[i];
-	for (i = 0; i <= l2; i++)
-		st[i + l1 + 1] = s2[i];
-	return (st);
+	len = malloc(sizeof(int) * width * height);
+	for (index = 0; index < width; index++)
+		for (index2 = 0; index2 < height; index2++)
+			len[index][index2] = 0;
+	return (len);
 }
