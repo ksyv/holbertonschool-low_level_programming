@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			j++;
 		}
 		else
-		break;
+		i++;
 	}
 	st[lentot + 1] = '\0';
 	return (st);
