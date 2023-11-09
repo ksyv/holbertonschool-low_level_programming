@@ -34,14 +34,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			st[i] = s1[i];
 			i++;
 		}
-		else if (j < n)
+		else if (j <= n)
 		{
 			st[i] = s2[j];
 			i++;
 			j++;
 		}
-		else
-		i++;
 	}
 	st[lentot + 1] = '\0';
 	return (st);
