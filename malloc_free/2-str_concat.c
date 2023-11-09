@@ -23,7 +23,7 @@ char *str_concat(char *s1, char *s2)
 	lentot = len1 + len2;
 	st = malloc((lentot + 1) * sizeof(char));
 	if (st == NULL)
-		return(NULL);
+		return (NULL);
 	while (i < lentot)
 	{
 		if (i < len1)
