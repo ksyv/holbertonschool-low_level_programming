@@ -8,8 +8,7 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *memcalloc = NULL;
-	char *set = NULL;
+	char *memcalloc = NULL;
 	unsigned int index = 0;
 
 	if (nmemb == 0 || size == 0)
@@ -17,8 +16,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	memcalloc = malloc(size * nmemb);
 	if (memcalloc == NULL)
 		return (NULL);
-	set = memcalloc;
 	for (index = 0; index < (size * nmemb); index++)
-		set[index] = '\0';
+		memcalloc[index] = 0;
 	return (memcalloc);
 }
