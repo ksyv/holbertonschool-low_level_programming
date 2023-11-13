@@ -1,5 +1,11 @@
 #ifndef __MY_DOG__
 #define __MY_DOG__
+/**
+ * struct my_dog - struct for name, age and owner of dog
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
+ */
 struct my_dog
 {
 	char *name;
