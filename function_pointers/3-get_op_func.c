@@ -18,11 +18,6 @@ op_t ops[] = {
         {NULL, NULL}
     };
     int i = 0;
-	if (ops[i].op == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
 	while (ops[i].op != NULL && *ops[i].op != *s)
 		i++;
 	if (ops[i].op == NULL)
