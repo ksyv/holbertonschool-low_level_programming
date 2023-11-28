@@ -23,11 +23,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 	if (temporaryNode == NULL)
 		return (NULL);
+	if (temporaryNode->next == NULL)
+		return (add_dnodeint_end(h, n));
 /*insert the new node and adjust the previous and next pointers*/
 	newNode =  malloc(sizeof(dlistint_t));
 	if (newNode == NULL)
 		return (NULL);
-
 	newNode->n = n;
 	newNode->next = temporaryNode;
 	newNode->prev = temporaryNode->prev;
