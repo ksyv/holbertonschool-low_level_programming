@@ -14,7 +14,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 /*if idx == 0, insert the new node at the beggining*/
     if (idx == 0)
         return (add_dnodeint(h, n));
-
 /*Run the list until idx*/
 	temporaryNode = *h;
 	for (index = 0; idx != index && temporaryNode != NULL; index++)
