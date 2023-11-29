@@ -1,11 +1,10 @@
 #include "lists.h"
 /**
- * insert_dnodeint_at_index - inserts a new node at a given position
+ * delete_dnodeint_at_index - delete a new node at a given position
  * by index of a dlistint_t linked list.
- * @h: pointer to the first element of dlist_t
- * @idx: index of the node
- * @n: int in the node's data
- * Return: number of nodes
+ * @head: pointer to the first element of dlist_t
+ * @index: index of the node
+ * Return: 1 if succed, -1 if failed
 */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
@@ -15,7 +14,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (*head == NULL)
 		return (-1);
 
-	for (searchindex = 1; searchindex < index; searchindex++)
+	for (searchindex = 0; searchindex != index; searchindex++)
 	{
 		if (temporary == NULL)
 			return (-1);
