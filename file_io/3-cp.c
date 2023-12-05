@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	close(reader);
-	close(writer);
+	close(fileToBeCopied);
+	close(copyFile);
 	return (0);
 }
