@@ -43,7 +43,9 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	close(fileToBeCopied);
-	close(copyFile);
+	if (close(fileToBeCopied) == -1)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileToBeCopied), exit(100);
+	if (close(copyFile) == -1)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", copyFile), exit(100);
 	return (0);
 }
