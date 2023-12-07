@@ -25,7 +25,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (strcmp(ht->array[index2]->key, key) == 0)
 		{
 			free(ht->array[index2]->value);
-			ht->array[i]->value = valueCopy;
+			ht->array[index2]->value = valueCopy;
 			return (1);
 		}
 	}
