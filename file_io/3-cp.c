@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 			exit(98);
 	copyFile = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (copyFile == -1)
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n" argv[2]), exit(99);
 	while (reader)
 	{
 		reader = read(fileCopied, buffer, 1024);
