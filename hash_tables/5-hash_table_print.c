@@ -14,14 +14,14 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	for (index = 0; index < ht->size; index++)
 	{
-		for (testNode = ht->array[index]; testNode != NULL; testNode = testNode->next)
+		for (testNode = ht->array[index]; testNode != NULL;
+			testNode = testNode->next)
 		{
 			if (test == 1)
 				printf(", ");
 			printf("'%s': '%s'", testNode->key, testNode->value);
 			test = 1;
 		}
-
 	}
 	printf("}\n");
 }
