@@ -487,19 +487,19 @@ Ksyv - [GitHub Profile](https://github.com/ksyv)
 
 ## Table of Contents :
 
-  - [0. strcat](#subparagraph0)
-  - [1. strncat](#subparagraph1)
-  - [2. strncpy](#subparagraph2)
-  - [3. strcmp](#subparagraph3)
-  - [4. I am a kind of paranoid in reverse. I suspect people of plotting to make me happy](#subparagraph4)
-  - [5. Always look up](#subparagraph5)
-  - [6. Expect the best. Prepare for the worst. Capitalize on what comes](#subparagraph6)
-  - [7. Mozart composed his music not for the elite, but for everybody](#subparagraph7)
-  - [8. rot13](#subparagraph8)
-  - [9. Numbers have life; they're not just symbols on paper](#subparagraph9)
-  - [10. A dream doesn't become reality through magic; it takes sweat, determination and hard work](#subparagraph10)
-  - [11. It is the addition of strangeness to beauty that constitutes the romantic character in art](#subparagraph11)
-  - [12. Noise is a buffer, more effective than cubicles or booth walls](#subparagraph12)
+  - [0. strcat](#subparagraph12)
+  - [1. strncat](#subparagraph13)
+  - [2. strncpy](#subparagraph14)
+  - [3. strcmp](#subparagraph15)
+  - [4. I am a kind of paranoid in reverse. I suspect people of plotting to make me happy](#subparagraph16)
+  - [5. Always look up](#subparagraph17)
+  - [6. Expect the best. Prepare for the worst. Capitalize on what comes](#subparagraph18)
+  - [7. Mozart composed his music not for the elite, but for everybody](#subparagraph19)
+  - [8. rot13](#subparagraph20)
+  - [9. Numbers have life; they're not just symbols on paper](#subparagraph21)
+  - [10. A dream doesn't become reality through magic; it takes sweat, determination and hard work](#subparagraph22)
+  - [11. It is the addition of strangeness to beauty that constitutes the romantic character in art](#subparagraph23)
+  - [12. Noise is a buffer, more effective than cubicles or booth walls](#subparagraph24)
 
 ## Requirements
 ### General
@@ -518,7 +518,7 @@ Ksyv - [GitHub Profile](https://github.com/ksyv)
 * Don’t forget to push your header file
 
 ## Task
-### 0. strcat <a name='subparagraph0'></a>
+### 0. strcat <a name='subparagraph12'></a>
 
 Write a function that concatenates two strings.
 
@@ -564,7 +564,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 1. strncat <a name='subparagraph1'></a>
+### 1. strncat <a name='subparagraph13'></a>
 
 Write a function that concatenates two strings.
 
@@ -621,7 +621,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 2. strncpy <a name='subparagraph2'></a>
+### 2. strncpy <a name='subparagraph14'></a>
 
 Write a function that copies a string.
 
@@ -695,7 +695,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 3. strcmp <a name='subparagraph3'></a>
+### 3. strcmp <a name='subparagraph15'></a>
 
 Write a function that compares two strings.
 
@@ -734,7 +734,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 4. I am a kind of paranoid in reverse. I suspect people of plotting to make me happy <a name='subparagraph4'></a>
+### 4. I am a kind of paranoid in reverse. I suspect people of plotting to make me happy <a name='subparagraph16'></a>
 
 Write a function that reverses the content of an array of integers.
 
@@ -793,7 +793,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 5. Always look up <a name='subparagraph5'></a>
+### 5. Always look up <a name='subparagraph17'></a>
 
 Write a function that changes all lowercase letters of a string to uppercase.
 
@@ -828,7 +828,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 6. Expect the best. Prepare for the worst. Capitalize on what comes <a name='subparagraph6'></a>
+### 6. Expect the best. Prepare for the worst. Capitalize on what comes <a name='subparagraph18'></a>
 
 Write a function that capitalizes all words of a string.
 
@@ -866,7 +866,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 7. Mozart composed his music not for the elite, but for everybody <a name='subparagraph7'></a>
+### 7. Mozart composed his music not for the elite, but for everybody <a name='subparagraph19'></a>
 
 Write a function that encodes a string into <a href="/rltoken/UkxNyYU117IdftA9XxsVyQ" target="_blank" title="1337">1337</a>.
 
@@ -910,7 +910,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 8. rot13 <a name='subparagraph8'></a>
+### 8. rot13 <a name='subparagraph20'></a>
 
 Write a function that encodes a string using <a href="/rltoken/A7LWsl_dEMwLByQJx2-W6w" target="_blank" title="rot13">rot13</a>.
 
@@ -969,7 +969,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 9. Numbers have life; they're not just symbols on paper <a name='subparagraph9'></a>
+### 9. Numbers have life; they're not just symbols on paper <a name='subparagraph21'></a>
 
 Write a function that prints an integer.
 
@@ -1014,7 +1014,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 10. A dream doesn't become reality through magic; it takes sweat, determination and hard work <a name='subparagraph10'></a>
+### 10. A dream doesn't become reality through magic; it takes sweat, determination and hard work <a name='subparagraph22'></a>
 
 <img alt="" loading="lazy" src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2020/9/21b4fc5c1b5df84e6ae4fe8807aa359d929e748a.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20250313%2Feu-west-3%2Fs3%2Faws4_request&amp;X-Amz-Date=20250313T145024Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=913915802130b217daef3fd88c2c7f1ee6f73a71d0f814d12531e03ca9963fbc" style=""/>
 
@@ -1030,7 +1030,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 11. It is the addition of strangeness to beauty that constitutes the romantic character in art <a name='subparagraph11'></a>
+### 11. It is the addition of strangeness to beauty that constitutes the romantic character in art <a name='subparagraph23'></a>
 
 Write a function that adds two numbers.
 
@@ -1116,7 +1116,7 @@ julien@ubuntu:~/$
 
 ---
 
-### 12. Noise is a buffer, more effective than cubicles or booth walls <a name='subparagraph12'></a>
+### 12. Noise is a buffer, more effective than cubicles or booth walls <a name='subparagraph24'></a>
 
 Write a function that prints a buffer.
 
