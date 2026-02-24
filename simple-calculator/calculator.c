@@ -14,6 +14,14 @@ int main()
         printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\n");
         printf("Choice: ");
         scanf("%d", &choice);
+        if (choice > -1 && choice < 5)
+        {
+            continue;
+        }
+        else 
+        {
+            printf("Invalid choice\n");
+        }
     }
     printf("Bye!\n");
 
