@@ -35,6 +35,15 @@ int main()
                 scanf("%d", &twice);
                 result = first - twice;
                 printf("Result: %d\n", result);
+
+            } else if (choice == 3)
+            {
+                printf("A: ");
+                scanf("%d", &first);
+                printf("B: ");
+                scanf("%d", &twice);
+                result = first * twice;
+                printf("Result: %d\n", result);
             }
         }
         else 
