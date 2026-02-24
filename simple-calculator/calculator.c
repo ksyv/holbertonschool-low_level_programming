@@ -3,6 +3,14 @@
 #include <string.h>
 #include <ctype.h>
 
+
+void clean_buffer(void)
+{
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+}
+
+
 int main()
 {
     int choice = -1;
@@ -22,35 +30,71 @@ int main()
             if (choice == 1)
             {
                 printf("A: ");
-                scanf("%d", &first);
+                while (scanf("%d", &first) != 1)
+                {
+                    printf("Invalid number\nA: ");
+                    clean_buffer();
+                }
+
                 printf("B: ");
-                scanf("%d", &twice);
+                while (scanf("%d", &twice) != 1)
+                {
+                    printf("Invalid number\nB: ");
+                    clean_buffer();
+                }
                 result = first + twice;
                 printf("Result: %d\n", result);
             } else if (choice == 2)
             {
                 printf("A: ");
-                scanf("%d", &first);
+                while (scanf("%d", &first) != 1)
+                {
+                    printf("Invalid number\nA: ");
+                    clean_buffer();
+                }
+
                 printf("B: ");
-                scanf("%d", &twice);
+                while (scanf("%d", &twice) != 1)
+                {
+                    printf("Invalid number\nB: ");
+                    clean_buffer();
+                }
                 result = first - twice;
                 printf("Result: %d\n", result);
 
             } else if (choice == 3)
             {
                 printf("A: ");
-                scanf("%d", &first);
+                while (scanf("%d", &first) != 1)
+                {
+                    printf("Invalid number\nA: ");
+                    clean_buffer();
+                }
+
                 printf("B: ");
-                scanf("%d", &twice);
+                while (scanf("%d", &twice) != 1)
+                {
+                    printf("Invalid number\nB: ");
+                    clean_buffer();
+                }
                 result = first * twice;
                 printf("Result: %d\n", result);
 
             } else if (choice == 4)
             {
                 printf("A: ");
-                scanf("%d", &first);
+                while (scanf("%d", &first) != 1)
+                {
+                    printf("Invalid number\nA: ");
+                    clean_buffer();
+                }
+
                 printf("B: ");
-                scanf("%d", &twice);
+                while (scanf("%d", &twice) != 1)
+                {
+                    printf("Invalid number\nB: ");
+                    clean_buffer();
+                }
                 if (twice == 0)
                 {
                     printf("Error: division by zero\n");
