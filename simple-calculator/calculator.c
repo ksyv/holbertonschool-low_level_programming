@@ -6,6 +6,9 @@
 int main()
 {
     int choice = -1;
+    int first = 0;
+    int twice = 0;
+    int result = 0;
 
     printf("simple calculator\n");
 
@@ -16,7 +19,15 @@ int main()
         scanf("%d", &choice);
         if (choice > -1 && choice < 5)
         {
-            continue;
+            if (choice == 1)
+            {
+                printf("A: ");
+                scanf("%d", &first);
+                printf("B: ");
+                scanf("%d", &twice);
+                result = first + twice;
+                printf("Result: %d\n", result);
+            }
         }
         else 
         {
